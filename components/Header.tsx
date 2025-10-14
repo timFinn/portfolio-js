@@ -8,7 +8,7 @@ export default function Header() {
     <header className="border-b">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold text-gray-900">
-          YourName
+          Timothy Finnegan
         </Link>
         <div className="flex gap-6">
           <Link href="/" className="text-gray-700 hover:text-blue-600 transition">

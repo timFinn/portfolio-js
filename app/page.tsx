@@ -9,7 +9,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="mb-20">
         <h1 className="text-5xl font-bold mb-4 text-gray-900">
-          Hi, I'm [Your Name]
+          Hi, I'm Tim
         </h1>
         <p className="text-2xl text-gray-600 mb-6">
           Senior Software Engineer specializing in game engines and real-time 3D systems
