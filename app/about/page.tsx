@@ -22,7 +22,7 @@ export default function About() {
           <div className="prose prose-lg prose-invert max-w-none">
             <p className="text-lg text-slate-300 leading-relaxed mb-6">
               I'm a Senior Software Engineer with over 10 years of experience building real-time 3D 
-              applications for defense, training, and commercial applications. My work focuses on the 
+              applications for public sector, training, and commercial applications. My work focuses on the 
               intersection of game engine technology, system architecture, and emerging AI capabilities.
             </p>
 
@@ -39,10 +39,10 @@ export default function About() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
               {[
-                'Architecting LLM integration systems ($2.6M funding)',
+                'Architecting LLM integration systems ($2M funding)',
                 'Leading Unity training platform maturation',
                 'Building deployable AI infrastructure',
-                'Designing next-generation scenario tools'
+                'Designing next-generation visualization tools'
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3 bg-cyan-500/10 border border-cyan-500/20 p-4 rounded-lg">
                   <span className="text-cyan-400 font-bold">✓</span>
@@ -58,11 +58,18 @@ export default function About() {
               on solutions that work reliably in production environments while pushing technical boundaries.
             </p>
 
+            <h2 className="text-3xl font-bold text-slate-100 mt-12 mb-4">Leadership</h2>
+            <p className="text-slate-300 leading-relaxed">
+              When I'm not coding, I'm exploring emerging technologies and mentoring other developers. I 
+              believe in sharing knowledge and contributing to the broader engineering community is 
+              the only way to achieve success.
+            </p>
+
             <h2 className="text-3xl font-bold text-slate-100 mt-12 mb-4">Beyond Code</h2>
             <p className="text-slate-300 leading-relaxed">
-              When I'm not coding, I'm exploring emerging technologies, mentoring junior developers, and 
-              staying current with advancements in AI, real-time rendering, and interactive systems. I 
-              believe in sharing knowledge and contributing to the broader engineering community.
+              Outside the office I'm regularly exploring emerging technologies and experimenting to identify 
+              real world results. I like to apply my technical skills to other domains like horticulture, 
+              which gives me a chance to step away from the keyboard. I also enjoy hiking, reading, playing music, and cooking.
             </p>
           </div>
         </div>

@@ -14,8 +14,8 @@ export default function Projects() {
             <span className="gradient-text">Projects</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-3xl">
-            A showcase of technical projects spanning game engines, AI integration, real-time systems, 
-            and defense applications. Each project demonstrates system architecture, technical leadership, 
+            A showcase of technical projects spanning game engines, AI integration, real-time visualizations, 
+            and embedded systems. Each project demonstrates system architecture, technical leadership, 
             and measurable impact.
           </p>
         </div>
@@ -37,9 +37,11 @@ export default function Projects() {
             Technologies I <span className="gradient-text">Work With</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Unreal Engine', 'Unity', 'C++', 'C#', 'Python', 'TypeScript', 'Docker', 
-              'Protobuf', 'iOS', 'Android', 'Meta Quest', 'Jenkins', 'Git', 'ROS',
-              'LLM APIs', 'CloudXR', 'Cesium', 'DOTS'].map((tech) => (
+            {['C++', 'C#', 'Python', 'TypeScript', 'Java', 'bash',
+              'Kubernetes', 'Docker', 'gRPC/Protobuf', 'Langchain', 
+              'Unreal Engine', 'Unity', 'CloudXR', 'Cesium', 'DOTS',
+              'Linux', 'iOS', 'Android', 'Meta Quest', 'ROS',
+              'Jenkins', 'Git', 'Perforce', ].map((tech) => (
               <span 
                 key={tech}
                 className="px-4 py-2 bg-slate-800 text-slate-300 border border-slate-700 rounded-lg font-medium font-mono text-sm hover:bg-slate-700 hover:text-cyan-400 hover:border-cyan-500/30 transition-all"
