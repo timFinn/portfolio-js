@@ -5,7 +5,7 @@ export const projects = [
     description: 'Architected AI-powered training system for government project, securing $2M in follow-on funding. Built production infrastructure and designed plugin architecture for seamless integration.',
     tech: ['Unreal Engine 5', 'Python', 'Docker', 'LLM APIs', 'C++'],
     highlight: '$2M Funding Secured',
-    // image: '/projects/llm-integration.jpg',
+    image: '/projects/llm-integration.png',
   },
   {
     id: 'baseball-training',
@@ -28,7 +28,7 @@ export const projects = [
     title: 'VR Football Demo Management',
     description: 'Built demo orchestration system for NFL Pro Era, enabling real-time control of 20+ scenarios. Created CloudXR streaming client for wireless Meta Quest demos at conventions.',
     tech: ['Unity', 'Meta Quest', 'CloudXR', 'OSC', 'JNI'],
-    // image: '/projects/nfl-vr.jpg',
+    image: '/projects/nfl-vr.jpg',
   },
   {
     id: 'xr-cockpit',

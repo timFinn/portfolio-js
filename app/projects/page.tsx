@@ -34,7 +34,7 @@ export default function Projects() {
       <section className="max-w-6xl mx-auto px-4 py-16">
         <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-12">
           <h2 className="text-3xl font-bold text-slate-100 mb-8 text-center">
-            Technologies I <span className="gradient-text">Work With</span>
+            Technologies I Work <span className="gradient-text">With</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
             {['C++', 'C#', 'Python', 'TypeScript', 'Java', 'bash',

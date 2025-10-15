@@ -30,7 +30,7 @@ export default function Home() {
               Senior Software Engineer architecting high-performance real-time 3D applications. 
               Specializing in <span className="text-cyan-400 font-semibold">AI integration</span>, 
               <span className="text-cyan-400 font-semibold"> XR/VR</span>, and 
-              <span className="text-cyan-400 font-semibold"> defense tech</span> with 10 years of proven impact.
+              <span className="text-cyan-400 font-semibold"> embedded systems</span> with 10 years of proven impact.
             </p>
             
             <div className="flex flex-wrap gap-4 mb-12">
