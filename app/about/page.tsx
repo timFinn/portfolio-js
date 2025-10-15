@@ -67,9 +67,9 @@ export default function About() {
 
             <h2 className="text-3xl font-bold text-slate-100 mt-12 mb-4">Beyond Code</h2>
             <p className="text-slate-300 leading-relaxed">
-              Outside the office I'm regularly exploring emerging technologies and experimenting to identify 
-              real world results. I like to apply my technical skills to other domains like horticulture, 
-              which gives me a chance to step away from the keyboard. I also enjoy hiking, reading, playing music, and cooking.
+              Outside the office I'm regularly experimenting in other domains like horticulture, meteorology, and amateur radio 
+              to identify and validate real world outcomes. I like to apply my problem solving skills anywhere I go,
+              which gives me a chance to step away from the keyboard. I also enjoy camping, hiking, reading, playing music, and cooking.
             </p>
           </div>
         </div>
