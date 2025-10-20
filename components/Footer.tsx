@@ -32,10 +32,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <div className="space-y-2">
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="block text-slate-400 hover:text-cyan-400 transition-colors">
+              <a href="https://linkedin.com/in/timothyfinnegan" target="_blank" rel="noopener noreferrer" className="block text-slate-400 hover:text-cyan-400 transition-colors">
                 LinkedIn
               </a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="block text-slate-400 hover:text-cyan-400 transition-colors">
+              <a href="https://github.com/timfinn" target="_blank" rel="noopener noreferrer" className="block text-slate-400 hover:text-cyan-400 transition-colors">
                 GitHub
               </a>
               <a href="mailto:your.email@example.com" className="block text-slate-400 hover:text-cyan-400 transition-colors">
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="pt-8 border-t border-slate-800 text-center text-slate-500">
-          <p>© {new Date().getFullYear()} Your Name. Built with Next.js and Tailwind CSS.</p>
+          <p>© {new Date().getFullYear()} Timothy Finnegan. Built with Next.js and Tailwind CSS.</p>
         </div>
       </div>
     </footer>

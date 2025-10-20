@@ -132,9 +132,9 @@ export default function Home() {
               color: 'pink'
             },
             {
-              icon: '🛡️',
-              title: 'Defense Technology',
-              description: 'Training systems, tactical interfaces, military R&D',
+              icon: '🏛️',
+              title: 'Public Sector Technology',
+              description: 'Training systems, data-rich interfaces, R&D',
               color: 'orange'
             }
           ].map((item, index) => (
@@ -177,7 +177,7 @@ export default function Home() {
                 gradient: 'from-cyan-500 to-blue-600'
               },
               {
-                title: 'Military Command & Control Interface',
+                title: 'Uncrewed Command & Control Interface',
                 impact: 'Real-time tactical operations',
                 tech: 'UE5 • iOS • Protobuf • Multiplayer',
                 gradient: 'from-purple-500 to-pink-600'

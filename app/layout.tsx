@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Timothy Finnegan - Senior Software Engineer',
-  description: 'Senior Software Engineer specializing in game engines, real-time 3D systems, and defense technology',
+  description: 'Senior Software Engineer specializing in game engines, real-time visualizations, and embedded systems',
 }
 
 export default function RootLayout({
