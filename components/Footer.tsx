@@ -33,12 +33,12 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <div className="space-y-2">
               <a href="https://linkedin.com/in/timothyfinnegan" target="_blank" rel="noopener noreferrer" className="block text-slate-400 hover:text-cyan-400 transition-colors">
-                LinkedIn
+                <img src="linkedin.svg" width={64} height={64} />
               </a>
               <a href="https://github.com/timfinn" target="_blank" rel="noopener noreferrer" className="block text-slate-400 hover:text-cyan-400 transition-colors">
-                GitHub
+                <img src="github-light.svg" width={64} height={64} />
               </a>
-              <a href="mailto:your.email@example.com" className="block text-slate-400 hover:text-cyan-400 transition-colors">
+              <a href="mailto:timothyfnngn@gmail.com" className="block text-slate-400 hover:text-cyan-400 transition-colors">
                 Email
               </a>
             </div>

@@ -25,15 +25,15 @@ export default function Contact() {
               <div className="text-3xl mb-4">📧</div>
               <h2 className="text-xl font-bold text-slate-100 mb-2">Email</h2>
               <a 
-                href="mailto:your.email@example.com" 
+                href="mailto:timothyfnngn@gmail.com" 
                 className="text-cyan-400 hover:text-cyan-300 font-medium transition-colors"
               >
-                your.email@example.com
+                timothyfnngn@gmail.com
               </a>
             </div>
 
             <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-xl p-8 hover:border-cyan-500/30 transition-all">
-              <div className="text-3xl mb-4">💻</div>
+              <div className="text-3xl mb-4"><img src="github-light.svg" width={32} height={32} /></div>
               <h2 className="text-xl font-bold text-slate-100 mb-2">GitHub</h2>
               <a 
                 href="https://github.com/timfinn" 
@@ -46,7 +46,7 @@ export default function Contact() {
             </div>
 
             <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-xl p-8 hover:border-cyan-500/30 transition-all">
-              <div className="text-3xl mb-4">💼</div>
+              <div className="text-3xl mb-4"><img src="linkedin.svg" width={32} height={32} /></div>
               <h2 className="text-xl font-bold text-slate-100 mb-2">LinkedIn</h2>
               <a 
                 href="https://linkedin.com/in/timothyfinnegan" 
