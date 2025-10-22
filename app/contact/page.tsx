@@ -11,7 +11,7 @@ export default function Contact() {
             Get in <span className="gradient-text">Touch</span>
           </h1>
           <p className="text-xl text-slate-400">
-            Let's discuss how we can work together on your next project
+            Let&apos;s discuss how we can work together on your next project
           </p>
         </div>
       </section>
@@ -125,7 +125,7 @@ export default function Contact() {
             Download Resume (PDF)
           </a>
         </div>
-        
+
         {/* Availability Notice */}
         <div className="mt-12 bg-emerald-500/10 border-2 border-emerald-500/20 rounded-xl p-8 text-center">
           <div className="inline-flex items-center gap-2 mb-4">

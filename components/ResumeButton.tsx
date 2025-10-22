@@ -8,11 +8,14 @@ interface ResumeButtonProps {
 export default function ResumeButton({ variant = 'primary', className = '' }: ResumeButtonProps) {
   const handleDownload = () => {
     // Optional: Track download with analytics
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'resume_download', {
-        event_category: 'engagement',
-        event_label: 'Resume PDF Download'
-      })
+    if (typeof window !== 'undefined' && 'gtag' in window) {
+      const gtag = (window as { gtag?: Function }).gtag
+      if (gtag) {
+        gtag('event', 'resume_download', {
+          event_category: 'engagement',
+          event_label: 'Resume PDF Download'
+        })
+      }
     }
   }
 
