@@ -229,11 +229,11 @@ export default function Home() {
           <div className="absolute inset-0 grid-pattern opacity-20" />
           <div className="relative">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Let's Build Something Amazing
+              Let&apos;s Build Something Amazing
             </h2>
             <p className="text-xl mb-8 text-cyan-50 max-w-2xl mx-auto">
               Looking for a senior engineer who can bridge cutting-edge R&D with production delivery? 
-              Let's talk about your next project.
+              Let&apos;s talk about your next project.
             </p>
             <Link 
               href="/contact"

@@ -21,7 +21,7 @@ export default function About() {
         <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-8 md:p-12">
           <div className="prose prose-lg prose-invert max-w-none">
             <p className="text-lg text-slate-300 leading-relaxed mb-6">
-              I'm a Senior Software Engineer with over 10 years of experience building real-time 3D 
+              I&apos;m a Senior Software Engineer with over 10 years of experience building real-time 3D 
               applications for public sector, training, and commercial applications. My work focuses on the 
               intersection of game engine technology, system architecture, and emerging AI capabilities.
             </p>
@@ -29,7 +29,7 @@ export default function About() {
             <h2 className="text-3xl font-bold text-slate-100 mt-12 mb-4">Background</h2>
             <p className="text-slate-300 leading-relaxed mb-6">
               My journey started at the University of Alabama in Huntsville, where I developed a passion 
-              for interactive systems and robotics. Since then, I've worked on everything from autonomous 
+              for interactive systems and robotics. Since then, I&apos;ve worked on everything from autonomous 
               vehicles to VR training systems to AI-powered game development tools.
             </p>
 
@@ -54,20 +54,20 @@ export default function About() {
             <h2 className="text-3xl font-bold text-slate-100 mt-12 mb-4">Technical Philosophy</h2>
             <p className="text-slate-300 leading-relaxed mb-6">
               I believe in building systems that are performant, maintainable, and deliver measurable value. 
-              Whether it's deterministic physics simulation or networked multiplayer architecture, I focus 
+              Whether it&apos;s deterministic physics simulation or networked multiplayer architecture, I focus 
               on solutions that work reliably in production environments while pushing technical boundaries.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-100 mt-12 mb-4">Leadership</h2>
             <p className="text-slate-300 leading-relaxed">
-              When I'm not coding, I'm exploring emerging technologies and mentoring other developers. I 
+              When I&apos;m not coding, I&apos;m exploring emerging technologies and mentoring other developers. I 
               believe in sharing knowledge and contributing to the broader engineering community is 
               the only way to achieve success.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-100 mt-12 mb-4">Beyond Code</h2>
             <p className="text-slate-300 leading-relaxed">
-              Outside the office I'm regularly experimenting in other domains like horticulture, meteorology, and amateur radio 
+              Outside the office I&apos;m regularly experimenting in other domains like horticulture, meteorology, and amateur radio 
               to identify and validate real world outcomes. I like to apply my problem solving skills anywhere I go,
               which gives me a chance to step away from the keyboard. I also enjoy camping, hiking, reading, playing music, and cooking.
             </p>

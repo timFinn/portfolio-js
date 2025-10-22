@@ -303,7 +303,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
               Interested in Working Together?
             </h2>
             <p className="text-lg mb-8 text-cyan-50 max-w-2xl mx-auto">
-              I'm always open to discussing new projects and opportunities.
+              I&apos;m always open to discussing new projects and opportunities.
             </p>
             <Link 
               href="/contact"
