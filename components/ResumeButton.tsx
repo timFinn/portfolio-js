@@ -6,19 +6,6 @@ interface ResumeButtonProps {
 }
 
 export default function ResumeButton({ variant = 'primary', className = '' }: ResumeButtonProps) {
-  const handleDownload = () => {
-    // Optional: Track download with analytics
-    if (typeof window !== 'undefined' && 'gtag' in window) {
-      const gtag = (window as { gtag?: Function }).gtag
-      if (gtag) {
-        gtag('event', 'resume_download', {
-          event_category: 'engagement',
-          event_label: 'Resume PDF Download'
-        })
-      }
-    }
-  }
-
   const variants = {
     primary: 'bg-cyan-600 hover:bg-cyan-500 text-white shadow-lg shadow-cyan-500/20',
     secondary: 'bg-slate-800 hover:bg-slate-700 text-white border border-slate-700',
@@ -29,7 +16,6 @@ export default function ResumeButton({ variant = 'primary', className = '' }: Re
     <a
       href="/resume.pdf"
       download="Timothy_Finnegan_Resume.pdf"
-      onClick={handleDownload}
       className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105 ${variants[variant]} ${className}`}
     >
       <svg 
