@@ -27,7 +27,7 @@ export const projects: Project[] = [
     tech: ['Unity', 'Python', 'Kubernetes', 'Langchain', 'Microservices'],
     highlight: '$2M Funding Secured',
     image: '/projects/llm-integration.png',
-    year: '2023-2024',
+    year: '2024-Present',
     role: 'Technical Lead & Architect',
     detailedDescription: `Led the architectural design and implementation of an AI-powered content generation system for Unity-based training applications. The system enables non-technical subject matter experts to generate realistic training scenarios using natural language, significantly reducing content creation time and costs.
       The project required designing a scalable microservices architecture that could handle multiple concurrent LLM inference requests while maintaining low latency. Built using modern cloud-native patterns with Kubernetes orchestration, the system supports multiple LLM providers and can scale horizontally based on demand.
@@ -98,8 +98,8 @@ export const projects: Project[] = [
     description: 'Led development of mobile training application using Unity DOTS, integrating computer vision pose estimation with deterministic physics for frame-perfect replay and analysis.',
     tech: ['Unity', 'DOTS', 'iOS', 'Cocoapods', 'Computer Vision'],
     highlight: 'Technical Lead',
-    year: '2021-2022',
-    role: 'Technical Lead',
+    year: '2023-2024',
+    role: 'Technical Lead & Architect',
     detailedDescription: `Led a 4-person engineering team developing an innovative mobile baseball training application that combines computer vision pose estimation with deterministic physics simulation. The application enables coaches and players to capture batting mechanics using a standard smartphone camera, then replay and analyze the motion with frame-perfect accuracy.
       The technical challenge was creating a deterministic physics system that could reconstruct 3D motion from 2D pose estimates provided by computer vision algorithms. The system needed to run at high simulation rates (240fps) while maintaining 60fps rendering on mobile devices, requiring careful optimization of both the simulation and presentation layers.
       Architected the system using Unity's Data-Oriented Technology Stack (DOTS) to achieve the necessary performance characteristics while maintaining code maintainability.`,
@@ -134,7 +134,7 @@ export const projects: Project[] = [
     tech: ['Unreal Engine 5', 'iOS', 'Protobuf', 'Networking', 'Cesium'],
     highlight: 'Advanced Visualization',
     year: '2022-2023',
-    role: 'Technical Lead',
+    role: 'Technical Lead & Architect',
     detailedDescription: `Architected and implemented a real-time command-and-control interface for coordinating uncrewed operations using Unreal Engine 5 on networked iPads. The system enables operators to visualize and control multiple assets simultaneously while streaming real-time tactical data from external systems.
       The interface needed to support two networked tablets working in concert, with operators able to seamlessly hand off control and share situational awareness. Designed custom networking layer using Protobuf for efficient message serialization and implemented low-latency RPCs for mission-critical operations where milliseconds matter.
       Integrated Cesium geospatial visualization engine to render accurate terrain data and overlay real-time asset positions, requiring optimization to maintain performance while streaming large terrain datasets over potentially constrained network connections.`,
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     tech: ['Unity', 'Meta Quest', 'CloudXR', 'OSC', 'JNI'],
     highlight: 'Cool Tools',
     image: '/projects/nfl-vr.jpg',
-    year: '2021-2022',
+    year: '2022',
     role: 'Tools Engineer',
     detailedDescription: `Developed comprehensive demo management and orchestration tools for NFL Pro Era, a commercial VR football training game. The system needed to support live demonstrations at major conventions and trade shows, where setup time was critical and reliability was paramount.
       Created tools enabling real-time control of 20+ different gameplay scenarios without performance impact, allowing demo operators to quickly respond to audience interest and showcase different features. The control system used OSC (Open Sound Control) messaging for low-latency communication between the demo control interface and the VR application.
@@ -205,7 +205,7 @@ export const projects: Project[] = [
     tech: ['Unreal Engine 4', 'XR', 'Vive Pro', 'C++'],
     highlight: 'Rapid Prototyping',
     year: '2020-2021',
-    role: 'Research Engineer',
+    role: 'Technical Lead & Architect',
     detailedDescription: `Developed experimental mixed reality interface concepts for next-generation vehicle cockpits using Unreal Engine 4 and HTC Vive Pro with passthrough cameras. The research project explored how XR technology could enhance pilot situational awareness and reduce cognitive load through innovative 3D spatial interfaces.
       The iterative design process involved close collaboration with pilots and subject matter experts through weekly feedback sessions. Each iteration incorporated lessons learned from operator testing, resulting in increasingly refined interaction patterns and information layouts that balanced information density with usability.
       Created custom Unreal Engine plugin architecture to support rapid prototyping of different UI concepts and interaction models, enabling the team to quickly validate design hypotheses with real users.`,
