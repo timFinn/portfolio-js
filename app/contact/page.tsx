@@ -103,6 +103,29 @@ export default function Contact() {
           </div>
         </div>
 
+        {/* Resume Download Section */}
+        <div className="mt-12 bg-slate-900/50 backdrop-blur border border-slate-800 rounded-xl p-8 text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-cyan-500/10 rounded-full mb-4">
+            <svg className="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h2 className="text-2xl font-bold text-slate-100 mb-2">Need My Resume?</h2>
+          <p className="text-slate-400 mb-6">
+            Download a PDF copy of my full resume with detailed work history and technical skills.
+          </p>
+          <a
+            href="/resume.pdf"
+            download="Timothy_Finnegan_Resume.pdf"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold transition-all duration-200 hover:scale-105 shadow-lg shadow-cyan-500/20"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Download Resume (PDF)
+          </a>
+        </div>
+        
         {/* Availability Notice */}
         <div className="mt-12 bg-emerald-500/10 border-2 border-emerald-500/20 rounded-xl p-8 text-center">
           <div className="inline-flex items-center gap-2 mb-4">

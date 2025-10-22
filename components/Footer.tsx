@@ -27,6 +27,14 @@ export default function Footer() {
                   {link}
                 </Link>
               ))}
+              {/* Add Resume Link */}
+              <a 
+                href="/resume.pdf"
+                download="Timothy_Finnegan_Resume.pdf"
+                className="block text-slate-400 hover:text-cyan-400 transition-colors"
+              >
+                Resume (PDF)
+              </a>
             </div>
           </div>
           <div>
