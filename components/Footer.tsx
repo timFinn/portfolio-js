@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -41,13 +42,13 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <div className="space-y-2">
               <a href="https://linkedin.com/in/timothyfinnegan" target="_blank" rel="noopener noreferrer" className="block text-slate-400 hover:text-cyan-400 transition-colors">
-                <img src="linkedin.svg" width={64} height={64} />
+                <Image src="linkedin.svg" width={64} height={64} alt="" />
               </a>
               <a href="https://github.com/timfinn" target="_blank" rel="noopener noreferrer" className="block text-slate-400 hover:text-cyan-400 transition-colors">
-                <img src="github-light.svg" width={64} height={64} />
+                <Image src="github-light.svg" width={64} height={64} alt="" />
               </a>
               <a href="mailto:timothyfnngn@gmail.com" className="block text-slate-400 hover:text-cyan-400 transition-colors">
-                Email
+                <Image src="mail.svg" width={64} height={64} alt="" />
               </a>
             </div>
           </div>
