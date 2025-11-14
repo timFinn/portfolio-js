@@ -38,8 +38,10 @@ export default function Projects() {
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
             {['C++', 'C#', 'Python', 'TypeScript', 'Java', 'bash',
-              'Kubernetes', 'Docker', 'gRPC/Protobuf', 'Langchain', 
+              'Kubernetes', 'Docker', 'gRPC/Protobuf', 'Langchain',
               'Unreal Engine', 'Unity', 'CloudXR', 'Cesium', 'DOTS',
+              'JNI', 'JAXB', 'Spring', 'Maven', 'Gradle', 'Swing', 'JOGL',
+              'SQLite', 'PostgresQL', 'MariaDB', 'MySQL', 'MongoDB', 'NoSQL',
               'Linux', 'iOS', 'Android', 'Meta Quest', 'ROS',
               'Jenkins', 'Git', 'Perforce', ].map((tech) => (
               <span 
