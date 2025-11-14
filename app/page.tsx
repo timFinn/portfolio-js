@@ -16,9 +16,9 @@ export default function Home() {
         
         <div className="relative max-w-6xl mx-auto px-4 py-32">
           <div className="animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-cyan-500/10 border border-cyan-500/20">
-              <span className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
-              <span className="text-cyan-300 text-sm font-mono font-medium">AVAILABLE FOR HIRE</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+              <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+              <span className="text-emerald-300 text-sm font-mono font-medium">AVAILABLE FOR HIRE</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
