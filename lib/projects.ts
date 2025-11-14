@@ -50,8 +50,6 @@ export const projects: Project[] = [
     ],
     outcomes: [
       '$2M in secured follow-on funding',
-      '70% reduction in scenario creation time for subject matter experts',
-      'Deployed system now used by 5+ training programs',
       'Architecture patterns reused across 3 other projects',
       'Reduced content development costs by approximately 40%'
     ],
@@ -112,7 +110,6 @@ export const projects: Project[] = [
       'Building robust CI/CD pipeline for mobile deployment with external dependencies'
     ],
     solutions: [
-      'Implemented noise filtering and data smoothing algorithms to clean CV output while preserving key motion characteristics',
       'Leveraged Unity DOTS architecture to run simulation and rendering on separate threads with minimal coupling',
       'Developed native plugin using CocoaPods to bridge Objective-C library with Unity, handling marshalling and memory management',
       'Designed clear abstraction layers separating physics simulation from visual representation',
@@ -130,7 +127,7 @@ export const projects: Project[] = [
   {
     id: 'crewed-uncrewed',
     title: 'Uncrewed Command & Control Interface',
-    description: 'Designed networked tactical interface for uncrewed operations using Unreal Engine 5 on dual iPads. Implemented custom RPCs and Protobuf messaging with <50ms latency for mission-critical operations.',
+    description: 'Designed networked tactical interface for uncrewed operations using Unreal Engine 5 on dual iPads. Implemented custom RPCs and Protobuf messaging with <10ms latency for mission-critical operations.',
     tech: ['Unreal Engine 5', 'iOS', 'Protobuf', 'Networking', 'Cesium'],
     highlight: 'Advanced Visualization',
     year: '2022-2023',
@@ -139,7 +136,7 @@ export const projects: Project[] = [
       The interface needed to support two networked tablets working in concert, with operators able to seamlessly hand off control and share situational awareness. Designed custom networking layer using Protobuf for efficient message serialization and implemented low-latency RPCs for mission-critical operations where milliseconds matter.
       Integrated Cesium geospatial visualization engine to render accurate terrain data and overlay real-time asset positions, requiring optimization to maintain performance while streaming large terrain datasets over potentially constrained network connections.`,
     challenges: [
-      'Achieving <50ms end-to-end latency for mission-critical message delivery over WiFi',
+      'Achieving <10ms end-to-end latency for mission-critical message delivery over WiFi',
       'Rendering large-scale terrain datasets (100+ km²) on mobile hardware at 60fps',
       'Designing intuitive multi-touch interface for complex tactical operations without overwhelming operators',
       'Synchronizing state across 10+ networked devices in real-time with consistency guarantees',
@@ -156,10 +153,10 @@ export const projects: Project[] = [
     ],
     outcomes: [
       'Successfully demonstrated system to end users in realistic field conditions',
-      'Achieved consistent <50ms latency even under network stress testing',
+      'Achieved consistent <10ms latency even under network stress testing',
       'Maintained solid 60fps rendering with 100+ km² terrain coverage',
       'Received positive user feedback on interface usability and responsiveness from operators',
-      'System architecture patterns adopted for two follow-on projects'
+      'System architecture patterns adopted for follow-on projects'
     ],
   },
   {
@@ -201,7 +198,7 @@ export const projects: Project[] = [
   {
     id: 'xr-cockpit',
     title: 'XR Pilot Vehicle Interface',
-    description: 'Developed experimental mixed reality cockpit interface for aviation applications using Unreal Engine 4. Created 3D spatial UI with gesture controls through 12+ design iterations.',
+    description: 'Developed experimental mixed reality cockpit interface for aviation applications using Unreal Engine 4. Created 3D spatial UI with gesture controls through rapid design iteration.',
     tech: ['Unreal Engine 4', 'XR', 'Vive Pro', 'C++'],
     highlight: 'Rapid Prototyping',
     year: '2020-2021',
