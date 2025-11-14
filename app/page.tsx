@@ -62,17 +62,6 @@ export default function Home() {
                 Get in Touch
               </Link>
             </div>
-
-            {/* Key Achievement Highlight */}
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-emerald-500/10 border border-emerald-500/20 rounded-lg">
-              <div className="flex items-center justify-center w-10 h-10 bg-emerald-500/20 rounded-full">
-                <span className="text-emerald-300 text-xl">💰</span>
-              </div>
-              <div>
-                <div className="text-emerald-300 font-semibold text-lg">$2M in Secured Funding</div>
-                <div className="text-slate-500 text-sm">Through AI/LLM integration initiative</div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -85,7 +74,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             { number: '10+', label: 'Years Experience', sublabel: 'Building real-time 3D systems' },
-            { number: '$2M', label: 'Funding Secured', sublabel: 'Through technical leadership' },
+            { number: 'Over $5M', label: 'Funding Secured', sublabel: 'Through technical leadership' },
             { number: '15+', label: 'Major Projects', sublabel: 'From concept to production' }
           ].map((stat, index) => (
             <div 
