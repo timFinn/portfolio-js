@@ -24,7 +24,7 @@ export const projects: Project[] = [
     id: 'llm-integration',
     title: 'LLM Integration for Game Engines',
     description: 'Architected AI-powered training system for government project, securing $2M in follow-on funding. Built production infrastructure and designed plugin architecture for seamless integration.',
-    tech: ['Unity', 'Python', 'Kubernetes', 'Langchain', 'Microservices'],
+    tech: ['Unity', 'WebGL', 'Python', 'Kubernetes', 'Langchain', 'Microservices'],
     highlight: '$2M Funding Secured',
     image: '/projects/llm-integration.png',
     year: '2024-Present',
