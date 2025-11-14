@@ -178,9 +178,9 @@ export default function Home() {
                 gradient: 'from-cyan-500 to-blue-600'
               },
               {
-                title: 'Uncrewed Command & Control Interface',
-                impact: 'Real-time tactical operations',
-                tech: 'UE5 • iOS • Protobuf • Multiplayer',
+                title: 'Training Platform Maturation',
+                impact: 'Bringing modern solutions to public sector training',
+                tech: 'Unity • Cross-platform • Emerging technologies • Multiple awards',
                 gradient: 'from-purple-500 to-pink-600'
               }
             ].map((project, index) => (
