@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-cyan-400">{' />'}</span>
             </h3>
             <p className="text-slate-400">
-              Senior Software Engineer specializing in game engines and real-time 3D systems.
+              Senior Software Engineer specializing in bringing cutting-edge R&D from prototype to production.
             </p>
           </div>
           <div>

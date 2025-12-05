@@ -221,7 +221,7 @@ export default function Home() {
               Let&apos;s Build Something Amazing
             </h2>
             <p className="text-xl mb-8 text-cyan-50 max-w-2xl mx-auto">
-              Looking for a senior engineer who can bridge cutting-edge R&D with production delivery? 
+              Looking for a senior engineer who can bring cutting-edge R&D from prototype to production? 
               Let&apos;s talk about your next project.
             </p>
             <Link 
