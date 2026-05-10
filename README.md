@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Timothy Finnegan — Portfolio
 
-## Getting Started
+Personal portfolio site for Timothy Finnegan, a Senior Software Engineer specializing in
+game engines, real-time 3D, AI integration, and XR/VR.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Framework:** Next.js 15 (App Router) with Turbopack
+- **Language:** TypeScript, React 19
+- **Styling:** Tailwind CSS v4
+- **Fonts:** Space Grotesk + JetBrains Mono (via `next/font`)
+- **Analytics:** Vercel Analytics
+- **Hosting:** Vercel
+
+## Project Structure
+
+```
+app/
+  page.tsx              # Home (hero, expertise, featured work)
+  about/                # Bio and background
+  contact/              # Contact info, form, resume download
+  projects/
+    page.tsx            # Project index + tech stack
+    [id]/page.tsx       # Per-project detail page
+  layout.tsx            # Root layout, fonts, header/footer
+  globals.css           # Tailwind v4 theme + custom utilities
+components/             # Header, Footer, ProjectCard, ResumeButton
+lib/projects.ts         # Project content (single source of truth)
+public/                 # Static assets, resume PDF, project images
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open http://localhost:3000.
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Command         | Description                       |
+| --------------- | --------------------------------- |
+| `npm run dev`   | Start the dev server (Turbopack)  |
+| `npm run build` | Production build                  |
+| `npm run start` | Run the production build locally  |
+| `npm run lint`  | Run ESLint                        |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Editing Content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Projects:** edit `lib/projects.ts` — adding, removing, or reordering entries
+  automatically updates the projects index, detail pages, and `generateStaticParams`.
+- **Home / About / Contact copy:** edit the corresponding `app/<route>/page.tsx`.
+- **Resume PDF:** replace `public/resume.pdf`.
+- **Project images:** drop into `public/projects/` and reference from `lib/projects.ts`.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Pushes to `main` deploy automatically via Vercel.

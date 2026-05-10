@@ -35,7 +35,7 @@ export default function Contact() {
             </div>
 
             <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-xl p-8 hover:border-cyan-500/30 transition-all">
-              <div className="text-3xl mb-4"><Image src="github-light.svg" width={32} height={32} alt="" /></div>
+              <div className="mb-4"><Image src="/github-light.svg" width={32} height={32} alt="GitHub" /></div>
               <h2 className="text-xl font-bold text-slate-100 mb-2">GitHub</h2>
               <a 
                 href="https://github.com/timfinn" 
@@ -48,7 +48,7 @@ export default function Contact() {
             </div>
 
             <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-xl p-8 hover:border-cyan-500/30 transition-all">
-              <div className="text-3xl mb-4"><Image src="linkedin.svg" width={32} height={32} alt="" /></div>
+              <div className="mb-4"><Image src="/linkedin.svg" width={32} height={32} alt="LinkedIn" /></div>
               <h2 className="text-xl font-bold text-slate-100 mb-2">LinkedIn</h2>
               <a 
                 href="https://linkedin.com/in/timothyfinnegan" 

@@ -13,9 +13,10 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for SEO
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  const project = projects.find((p) => p.id === params.id)
-  
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const project = projects.find((p) => p.id === id)
+
   if (!project) {
     return {
       title: 'Project Not Found',
@@ -28,15 +29,16 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   }
 }
 
-export default function ProjectDetail({ params }: { params: { id: string } }) {
-  const project = projects.find((p) => p.id === params.id)
+export default async function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const project = projects.find((p) => p.id === id)
 
   if (!project) {
     notFound()
   }
 
   // Find previous and next projects for navigation
-  const currentIndex = projects.findIndex((p) => p.id === params.id)
+  const currentIndex = projects.findIndex((p) => p.id === id)
   const nextProject = projects[(currentIndex + 1) % projects.length]
   const prevProject = projects[(currentIndex - 1 + projects.length) % projects.length]
 

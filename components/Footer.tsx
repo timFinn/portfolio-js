@@ -40,15 +40,31 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
-            <div className="space-y-2">
-              <a href="https://linkedin.com/in/timothyfinnegan" target="_blank" rel="noopener noreferrer" className="block text-slate-400 hover:text-cyan-400 transition-colors">
-                <Image src="linkedin.svg" width={64} height={64} alt="" />
+            <div className="flex items-center gap-4">
+              <a
+                href="https://linkedin.com/in/timothyfinnegan"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-slate-400 hover:text-cyan-400 transition-colors"
+              >
+                <Image src="/linkedin.svg" width={28} height={28} alt="LinkedIn" />
               </a>
-              <a href="https://github.com/timfinn" target="_blank" rel="noopener noreferrer" className="block text-slate-400 hover:text-cyan-400 transition-colors">
-                <Image src="github-light.svg" width={64} height={64} alt="" />
+              <a
+                href="https://github.com/timfinn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="text-slate-400 hover:text-cyan-400 transition-colors"
+              >
+                <Image src="/github-light.svg" width={28} height={28} alt="GitHub" />
               </a>
-              <a href="mailto:timothyfnngn@gmail.com" className="block text-slate-400 hover:text-cyan-400 transition-colors">
-                <Image src="mail.svg" width={64} height={64} alt="" />
+              <a
+                href="mailto:timothyfnngn@gmail.com"
+                aria-label="Email"
+                className="text-slate-400 hover:text-cyan-400 transition-colors"
+              >
+                <Image src="/mail.svg" width={28} height={28} alt="Email" />
               </a>
             </div>
           </div>
