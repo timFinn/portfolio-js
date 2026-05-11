@@ -114,36 +114,42 @@ export default function Home() {
               Icon: Gamepad2,
               title: 'Game Engines',
               description: 'Unreal Engine 4/5, Unity DOTS, custom engine architecture',
+              chip: 'bg-cyan-500/10 border-cyan-500/20 text-cyan-400 group-hover:bg-cyan-500/15 group-hover:border-cyan-500/40',
             },
             {
               Icon: BrainCircuit,
               title: 'AI Integration',
               description: 'LLM infrastructure, AI-powered tools, emerging technologies',
+              chip: 'bg-purple-500/10 border-purple-500/20 text-purple-400 group-hover:bg-purple-500/15 group-hover:border-purple-500/40',
             },
             {
               Icon: Users,
               title: 'Technical Leadership',
               description: 'Team management, architecture design, stakeholder coordination',
+              chip: 'bg-blue-500/10 border-blue-500/20 text-blue-400 group-hover:bg-blue-500/15 group-hover:border-blue-500/40',
             },
             {
               Icon: Network,
               title: 'Real-time Systems',
               description: 'Networked multiplayer, deterministic simulation, low-latency networking',
+              chip: 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400 group-hover:bg-emerald-500/15 group-hover:border-emerald-500/40',
             },
             {
               Icon: Glasses,
               title: 'XR/VR Development',
               description: 'Meta Quest, HoloLens, mixed reality training applications',
+              chip: 'bg-pink-500/10 border-pink-500/20 text-pink-400 group-hover:bg-pink-500/15 group-hover:border-pink-500/40',
             },
             {
               Icon: Landmark,
               title: 'Public Sector Technology',
               description: 'Training systems, data-rich interfaces, R&D',
+              chip: 'bg-amber-500/10 border-amber-500/20 text-amber-400 group-hover:bg-amber-500/15 group-hover:border-amber-500/40',
             }
           ].map((item, index) => (
             <div key={index} className="group">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-cyan-500/10 border border-cyan-500/20 mb-4 group-hover:bg-cyan-500/15 group-hover:border-cyan-500/40 transition-colors">
-                <item.Icon className="w-6 h-6 text-cyan-400" strokeWidth={1.75} />
+              <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg border mb-4 transition-colors ${item.chip}`}>
+                <item.Icon className="w-6 h-6" strokeWidth={1.75} />
               </div>
               <h3 className="text-xl font-bold text-slate-100 mb-2">
                 {item.title}
