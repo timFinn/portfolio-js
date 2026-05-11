@@ -2,17 +2,26 @@ export default function About() {
   return (
     <div className="min-h-screen bg-slate-950">
       {/* Header */}
-      <section className="relative bg-slate-950 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 grid-pattern opacity-40" />
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-purple-500/10 rounded-full blur-3xl" />
-        
-        <div className="relative max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            About <span className="gradient-text">Me</span>
-          </h1>
-          <p className="text-xl text-slate-400">
-            Senior Software Engineer passionate about pushing the boundaries of interactive systems
-          </p>
+      <section className="relative bg-slate-950 text-white pt-24 pb-20 overflow-hidden">
+        <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl" />
+
+        <div className="relative max-w-5xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-7">
+            <div className="text-purple-400 font-mono text-sm uppercase tracking-widest mb-4">
+              / about
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-100 leading-[1.05]">
+              Hi, I&apos;m Tim &mdash; an engineer who likes hard problems and
+              real users.
+            </h1>
+          </div>
+          <div className="lg:col-span-5 lg:pl-8 lg:border-l lg:border-slate-800">
+            <p className="text-lg text-slate-400 leading-relaxed">
+              Senior Software Engineer passionate about pushing the boundaries
+              of interactive systems &mdash; game engines, real-time 3D, and
+              the emerging AI tooling around them.
+            </p>
+          </div>
         </div>
       </section>
 

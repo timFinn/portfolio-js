@@ -5,16 +5,21 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-slate-950">
       {/* Header */}
-      <section className="relative bg-slate-950 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 grid-pattern opacity-40" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-3xl" />
-        
-        <div className="relative max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Get in <span className="gradient-text">Touch</span>
+      <section className="relative bg-slate-950 text-white pt-24 pb-16 text-center">
+        <div className="max-w-3xl mx-auto px-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-6 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+            <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+            <span className="text-emerald-300 text-xs font-mono font-medium uppercase tracking-widest">
+              Available for new opportunities
+            </span>
+          </div>
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-100 mb-4">
+            Get in touch.
           </h1>
-          <p className="text-xl text-slate-400">
-            Let&apos;s discuss how we can work together on your next project
+          <p className="text-lg text-slate-400">
+            Email is fastest. Happy to chat about senior engineering roles,
+            technical leadership positions, and consulting on game engines, AI
+            integration, or real-time systems.
           </p>
         </div>
       </section>
@@ -127,18 +132,6 @@ export default function Contact() {
             </svg>
             Download Resume (PDF)
           </a>
-        </div>
-
-        {/* Availability Notice */}
-        <div className="mt-12 bg-emerald-500/10 border-2 border-emerald-500/20 rounded-xl p-8 text-center">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div>
-            <span className="text-emerald-300 font-bold">Available for new opportunities</span>
-          </div>
-          <p className="text-slate-400">
-            Open to senior engineering roles, technical leadership positions, and consulting opportunities 
-            in game engines, AI integration, and real-time systems.
-          </p>
         </div>
       </section>
     </div>

@@ -4,20 +4,22 @@ import { projects } from '@/lib/projects'
 export default function Projects() {
   return (
     <div className="min-h-screen bg-slate-950">
-      {/* Header Section */}
-      <section className="relative bg-slate-950 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 grid-pattern opacity-40" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-3xl" />
-        
-        <div className="relative max-w-6xl mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">Projects</span>
-          </h1>
-          <p className="text-xl text-slate-400 max-w-3xl">
-            A showcase of technical projects spanning game engines, AI integration, real-time visualizations, 
-            and embedded systems. Each project demonstrates system architecture, technical leadership, 
-            and measurable impact.
-          </p>
+      {/* Header */}
+      <section className="relative bg-slate-950 text-white pt-24 pb-12 border-b border-slate-800/60">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-cyan-400 font-mono text-sm uppercase tracking-widest mb-3">
+            / portfolio &middot; {projects.length} projects
+          </div>
+          <div className="flex items-end justify-between gap-8 flex-wrap">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-100">
+              Projects
+            </h1>
+            <p className="text-lg text-slate-400 max-w-xl">
+              Real-time systems, game engine work, AI integration, and embedded
+              applications &mdash; each one capturing a slice of architecture,
+              leadership, and measurable impact.
+            </p>
+          </div>
         </div>
       </section>
 
