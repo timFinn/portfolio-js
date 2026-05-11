@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Boxes } from 'lucide-react'
 
 interface Project {
   id: string
@@ -26,9 +27,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         ) : (
           <div className="h-56 bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center relative overflow-hidden">
             <div className="absolute inset-0 grid-pattern opacity-20" />
-            <div className="relative text-white text-6xl group-hover:scale-110 transition-transform duration-300">
-              🚀
-            </div>
+            <Boxes className="relative w-20 h-20 text-white group-hover:scale-110 transition-transform duration-300" strokeWidth={1.25} />
           </div>
         )}
         

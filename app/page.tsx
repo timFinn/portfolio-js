@@ -1,4 +1,12 @@
 import Link from 'next/link'
+import {
+  Gamepad2,
+  BrainCircuit,
+  Users,
+  Network,
+  Glasses,
+  Landmark,
+} from 'lucide-react'
 
 export default function Home() {
   return (
@@ -103,49 +111,41 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             {
-              icon: '🎮',
+              Icon: Gamepad2,
               title: 'Game Engines',
               description: 'Unreal Engine 4/5, Unity DOTS, custom engine architecture',
-              color: 'cyan'
             },
             {
-              icon: '🤖',
+              Icon: BrainCircuit,
               title: 'AI Integration',
               description: 'LLM infrastructure, AI-powered tools, emerging technologies',
-              color: 'purple'
             },
             {
-              icon: '👥',
+              Icon: Users,
               title: 'Technical Leadership',
               description: 'Team management, architecture design, stakeholder coordination',
-              color: 'blue'
             },
             {
-              icon: '🌐',
+              Icon: Network,
               title: 'Real-time Systems',
               description: 'Networked multiplayer, deterministic simulation, low-latency networking',
-              color: 'green'
             },
             {
-              icon: '🥽',
+              Icon: Glasses,
               title: 'XR/VR Development',
               description: 'Meta Quest, HoloLens, mixed reality training applications',
-              color: 'pink'
             },
             {
-              icon: '🏛️',
+              Icon: Landmark,
               title: 'Public Sector Technology',
               description: 'Training systems, data-rich interfaces, R&D',
-              color: 'orange'
             }
           ].map((item, index) => (
-            <div 
+            <div
               key={index}
               className="group bg-slate-900/30 backdrop-blur border border-slate-800 rounded-xl p-8 hover:border-cyan-500/30 hover:bg-slate-900/50 transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                {item.icon}
-              </div>
+              <item.Icon className="w-10 h-10 text-cyan-400 mb-4 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
               <h3 className="text-xl font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors">
                 {item.title}
               </h3>

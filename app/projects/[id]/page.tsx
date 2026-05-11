@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { ClipboardList, Target, Lightbulb, TrendingUp, Images } from 'lucide-react'
 import { projects } from '@/lib/projects'
 
 // Generate static paths for all projects at build time
@@ -124,7 +125,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
         {project.detailedDescription && (
           <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-8 md:p-12">
             <h2 className="text-3xl font-bold text-slate-100 mb-6 flex items-center gap-3">
-              <span className="text-cyan-400">📋</span>
+              <ClipboardList className="w-7 h-7 text-cyan-400" strokeWidth={1.75} />
               Overview
             </h2>
             <div className="prose prose-invert prose-lg max-w-none space-y-4">
@@ -144,7 +145,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
             {project.challenges && (
               <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-8">
                 <h2 className="text-2xl font-bold text-slate-100 mb-6 flex items-center gap-3">
-                  <span className="text-3xl">🎯</span>
+                  <Target className="w-7 h-7 text-cyan-400" strokeWidth={1.75} />
                   Challenges
                 </h2>
                 <ul className="space-y-4">
@@ -162,7 +163,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
             {project.solutions && (
               <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-8">
                 <h2 className="text-2xl font-bold text-slate-100 mb-6 flex items-center gap-3">
-                  <span className="text-3xl">💡</span>
+                  <Lightbulb className="w-7 h-7 text-emerald-400" strokeWidth={1.75} />
                   Solutions
                 </h2>
                 <ul className="space-y-4">
@@ -184,7 +185,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
             <div className="absolute inset-0 grid-pattern opacity-20" />
             <div className="relative">
               <h2 className="text-3xl font-bold text-slate-100 mb-8 flex items-center gap-3">
-                <span className="text-3xl">🚀</span>
+                <TrendingUp className="w-7 h-7 text-cyan-400" strokeWidth={1.75} />
                 Outcomes & Impact
               </h2>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -206,7 +207,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
         {project.images && project.images.length > 1 && (
           <div>
             <h2 className="text-3xl font-bold text-slate-100 mb-8 flex items-center gap-3">
-              <span className="text-cyan-400">🖼️</span>
+              <Images className="w-7 h-7 text-cyan-400" strokeWidth={1.75} />
               Gallery
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

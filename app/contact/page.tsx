@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Mail } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -24,7 +25,7 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="space-y-6">
             <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-xl p-8 hover:border-cyan-500/30 transition-all">
-              <div className="text-3xl mb-4">📧</div>
+              <Mail className="w-8 h-8 text-cyan-400 mb-4" strokeWidth={1.75} />
               <h2 className="text-xl font-bold text-slate-100 mb-2">Email</h2>
               <a 
                 href="mailto:timothyfnngn@gmail.com" 
