@@ -77,38 +77,38 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-950 to-transparent" />
       </section>
 
-      {/* Stats Section */}
-      <section className="max-w-6xl mx-auto px-4 -mt-16 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            { number: '10+', label: 'Years Experience', sublabel: 'Building real-time 3D systems' },
-            { number: 'Over $5M', label: 'Funding Secured', sublabel: 'Through technical leadership' },
-            { number: '15+', label: 'Major Projects', sublabel: 'From concept to production' }
-          ].map((stat, index) => (
-            <div 
-              key={index}
-              className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/30 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300"
-            >
-              <div className="text-5xl font-bold gradient-text mb-2">{stat.number}</div>
-              <div className="text-slate-300 font-semibold mb-1">{stat.label}</div>
-              <div className="text-sm text-slate-500">{stat.sublabel}</div>
-            </div>
-          ))}
+      {/* Stats Strip */}
+      <section className="relative z-10 -mt-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl divide-y md:divide-y-0 md:divide-x divide-slate-800 grid grid-cols-1 md:grid-cols-3 overflow-hidden shadow-2xl shadow-slate-950/50">
+            {[
+              { number: '10+', label: 'Years Experience', sublabel: 'Building real-time 3D systems' },
+              { number: 'Over $5M', label: 'Funding Secured', sublabel: 'Through technical leadership' },
+              { number: '15+', label: 'Major Projects', sublabel: 'From concept to production' }
+            ].map((stat, index) => (
+              <div key={index} className="px-8 py-8 text-center md:text-left">
+                <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">{stat.number}</div>
+                <div className="text-slate-200 font-semibold mb-1">{stat.label}</div>
+                <div className="text-sm text-slate-500">{stat.sublabel}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Core Expertise Section */}
       <section className="max-w-6xl mx-auto px-4 py-24">
-        <div className="text-center mb-16">
+        <div className="mb-16 max-w-3xl">
+          <div className="text-cyan-400 font-mono text-sm uppercase tracking-widest mb-3">/ what I do</div>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-4">
-            Core <span className="gradient-text">Expertise</span>
+            Core <span className="gradient-text">expertise</span>
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Specialized skills in cutting-edge technologies and technical leadership
+          <p className="text-xl text-slate-400">
+            Specialized skills in cutting-edge technologies and technical leadership.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">
           {[
             {
               Icon: Gamepad2,
@@ -141,12 +141,11 @@ export default function Home() {
               description: 'Training systems, data-rich interfaces, R&D',
             }
           ].map((item, index) => (
-            <div
-              key={index}
-              className="group bg-slate-900/30 backdrop-blur border border-slate-800 rounded-xl p-8 hover:border-cyan-500/30 hover:bg-slate-900/50 transition-all duration-300 hover:-translate-y-1"
-            >
-              <item.Icon className="w-10 h-10 text-cyan-400 mb-4 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
-              <h3 className="text-xl font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors">
+            <div key={index} className="group">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-cyan-500/10 border border-cyan-500/20 mb-4 group-hover:bg-cyan-500/15 group-hover:border-cyan-500/40 transition-colors">
+                <item.Icon className="w-6 h-6 text-cyan-400" strokeWidth={1.75} />
+              </div>
+              <h3 className="text-xl font-bold text-slate-100 mb-2">
                 {item.title}
               </h3>
               <p className="text-slate-400 leading-relaxed">
@@ -158,56 +157,58 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Preview */}
-      <section className="bg-slate-900/50 backdrop-blur border-y border-slate-800 py-24">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-4">
-              Featured <span className="gradient-text">Work</span>
-            </h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-              Highlights from my portfolio of real-time systems and game engine projects
-            </p>
+      <section className="relative bg-slate-900/40 border-y border-slate-800/80 py-24 overflow-hidden">
+        <div className="absolute -top-24 -right-24 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl" />
+
+        <div className="relative max-w-6xl mx-auto px-4">
+          <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
+            <div className="max-w-2xl">
+              <div className="text-cyan-400 font-mono text-sm uppercase tracking-widest mb-3">/ selected work</div>
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-100">
+                Featured <span className="gradient-text">work</span>
+              </h2>
+            </div>
+            <Link
+              href="/projects"
+              className="text-cyan-400 hover:text-cyan-300 font-mono text-sm inline-flex items-center gap-2 group"
+            >
+              All projects
+              <span className="group-hover:translate-x-1 transition-transform">→</span>
+            </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
                 title: 'LLM Integration for Game Engines',
                 impact: '$2M funding secured',
                 tech: 'Unity • Python • Microservices',
-                gradient: 'from-cyan-500 to-blue-600'
+                gradient: 'from-cyan-500/20 to-blue-600/20'
               },
               {
                 title: 'Training Platform Maturation',
                 impact: 'Modernization',
                 tech: 'Cross-platform • Scalable architecture • Emerging technologies • Multiple awards',
-                gradient: 'from-purple-500 to-pink-600'
+                gradient: 'from-purple-500/20 to-pink-600/20'
               }
             ].map((project, index) => (
-              <div 
+              <div
                 key={index}
-                className="relative group bg-slate-900/80 backdrop-blur border border-slate-800 rounded-xl p-8 overflow-hidden hover:border-cyan-500/30 transition-all duration-300"
+                className="group relative bg-slate-950/60 border border-slate-800 rounded-2xl p-8 overflow-hidden hover:border-cyan-500/40 transition-colors"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-5 transition-opacity`} />
-                <h3 className="relative text-2xl font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors">
-                  {project.title}
-                </h3>
-                <div className="relative inline-block px-3 py-1 bg-emerald-500/20 border border-emerald-500/30 rounded-full text-emerald-300 text-sm font-medium mb-4">
-                  {project.impact}
+                <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity`} />
+                <div className="relative">
+                  <div className="inline-block px-3 py-1 bg-emerald-500/15 border border-emerald-500/25 rounded-full text-emerald-300 text-xs font-mono font-medium mb-4">
+                    {project.impact}
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-slate-500 font-mono text-sm">{project.tech}</p>
                 </div>
-                <p className="relative text-slate-400 font-mono text-sm">{project.tech}</p>
               </div>
             ))}
-          </div>
-
-          <div className="text-center">
-            <Link 
-              href="/projects"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold transition-all duration-200 hover:scale-105 shadow-lg shadow-cyan-500/20"
-            >
-              View All Projects
-              <span>→</span>
-            </Link>
           </div>
         </div>
       </section>
