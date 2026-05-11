@@ -16,7 +16,7 @@ export default function ResumeButton({ variant = 'primary', className = '' }: Re
     <a
       href="/resume.pdf"
       download="Timothy_Finnegan_Resume.pdf"
-      className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105 ${variants[variant]} ${className}`}
+      className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 ${variants[variant]} ${className}`}
     >
       <svg 
         className="w-5 h-5" 

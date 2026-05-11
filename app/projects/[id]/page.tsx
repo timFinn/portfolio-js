@@ -236,7 +236,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group px-6 py-3 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold transition-all duration-200 hover:scale-105 shadow-lg shadow-cyan-500/20 inline-flex items-center gap-2"
+                className="group px-6 py-3 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold transition-colors duration-200 shadow-lg shadow-cyan-500/20 inline-flex items-center gap-2"
               >
                 View Demo
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -310,7 +310,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
             </p>
             <Link 
               href="/contact"
-              className="inline-block px-8 py-4 bg-white text-slate-900 rounded-lg font-bold hover:bg-slate-100 transition-all duration-200 hover:scale-105 shadow-xl"
+              className="inline-block px-8 py-4 bg-white text-slate-900 rounded-lg font-bold hover:bg-slate-100 transition-colors duration-200 shadow-xl"
             >
               Get in Touch
             </Link>

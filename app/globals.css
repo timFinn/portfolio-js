@@ -17,10 +17,6 @@
   background-clip: text;
 }
 
-@utility glow-text {
-  text-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
-}
-
 @utility grid-pattern {
   background-image: 
     linear-gradient(rgba(34, 211, 238, 0.05) 1px, transparent 1px),

@@ -31,7 +31,7 @@ export default function Home() {
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="text-slate-100">Building the future of</span>
-              <span className="block gradient-text glow-text">interactive systems</span>
+              <span className="block gradient-text">interactive systems</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-slate-400 mb-8 max-w-3xl leading-relaxed">
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-4 mb-12">
               <Link 
                 href="/projects" 
-                className="group px-8 py-4 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-105"
+                className="group px-8 py-4 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold transition-colors duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40"
               >
                 <span className="flex items-center gap-2">
                   View Projects
@@ -233,7 +233,7 @@ export default function Home() {
             </p>
             <Link 
               href="/contact"
-              className="inline-block px-8 py-4 bg-white text-slate-900 rounded-lg font-bold hover:bg-slate-100 transition-all duration-200 hover:scale-105 shadow-xl"
+              className="inline-block px-8 py-4 bg-white text-slate-900 rounded-lg font-bold hover:bg-slate-100 transition-colors duration-200 shadow-xl"
             >
               Get in Touch
             </Link>

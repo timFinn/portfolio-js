@@ -14,20 +14,20 @@ interface Project {
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link href={`/projects/${project.id}`} className="block">
-      <div className="group bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-500/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-2 cursor-pointer h-full">
+      <div className="group bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-500/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-colors duration-300 cursor-pointer h-full">
         {project.image ? (
           <div className="relative h-56 bg-gradient-to-br from-cyan-500 to-blue-600 overflow-hidden">
             <Image 
               src={project.image} 
               alt={project.title}
               fill
-              className="object-cover group-hover:scale-110 transition-transform duration-500"
+              className="object-cover"
             />
           </div>
         ) : (
           <div className="h-56 bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center relative overflow-hidden">
             <div className="absolute inset-0 grid-pattern opacity-20" />
-            <Boxes className="relative w-20 h-20 text-white group-hover:scale-110 transition-transform duration-300" strokeWidth={1.25} />
+            <Boxes className="relative w-20 h-20 text-white" strokeWidth={1.25} />
           </div>
         )}
         
