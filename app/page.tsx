@@ -38,7 +38,7 @@ export default function Home() {
               Senior Software Engineer architecting high-performance real-time 3D applications. 
               Specializing in <span className="text-cyan-400 font-semibold">AI integration</span>, 
               <span className="text-cyan-400 font-semibold"> XR/VR</span>, and 
-              <span className="text-cyan-400 font-semibold"> embedded systems</span> with 10 years of proven impact.
+              <span className="text-cyan-400 font-semibold"> embedded systems</span> with 12+ years of proven impact.
             </p>
             
             <div className="flex flex-wrap gap-4 mb-12">
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl divide-y md:divide-y-0 md:divide-x divide-slate-800 grid grid-cols-1 md:grid-cols-3 overflow-hidden shadow-2xl shadow-slate-950/50">
             {[
-              { number: '10+', label: 'Years Experience', sublabel: 'Building real-time 3D systems' },
+              { number: '12+', label: 'Years Experience', sublabel: 'Building real-time 3D systems' },
               { number: 'Over $5M', label: 'Funding Secured', sublabel: 'Through technical leadership' },
               { number: '15+', label: 'Major Projects', sublabel: 'From concept to production' }
             ].map((stat, index) => (

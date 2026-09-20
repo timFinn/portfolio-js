@@ -30,7 +30,7 @@ export default function About() {
         <div className="bg-slate-900/50 backdrop-blur border border-slate-800 rounded-2xl p-8 md:p-12">
           <div className="prose prose-lg prose-invert max-w-none">
             <p className="text-lg text-slate-300 leading-relaxed mb-6">
-              I&apos;m a Senior Software Engineer with over 10 years of experience building real-time 3D 
+              I&apos;m a Senior Software Engineer with over 12 years of experience building real-time 3D 
               applications for public sector, training, and commercial applications. My work focuses on the 
               intersection of game engine technology, system architecture, and emerging AI capabilities.
             </p>
