@@ -1,7 +1,10 @@
 // lib/projects.ts
 
+export type ProjectCategory = 'professional' | 'personal'
+
 export interface Project {
   id: string
+  category: ProjectCategory
   title: string
   description: string
   tech: string[]
@@ -22,6 +25,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'training-maturation',
+    category: 'professional',
     title: 'Training Platform Maturation',
     description: 'Leading technical modernization of Unity training system after gap analysis. Recently secured an additional $3.5M in contract awards. Architecting improvements to ensure stability, performance, and maintainability.',
     tech: ['Unity', 'Requirements Definition', 'System Architecture', 'DevOps'],
@@ -56,6 +60,7 @@ export const projects: Project[] = [
   },
   {
     id: 'llm-integration',
+    category: 'professional',
     title: 'LLM Integration for Game Engines',
     description: 'Architected AI-powered training system for government project, securing $2M in follow-on funding. Built production infrastructure and designed plugin architecture for seamless integration.',
     tech: ['Unity', 'WebGL', 'Python', 'Kubernetes', 'Langchain', 'Microservices'],
@@ -92,6 +97,7 @@ export const projects: Project[] = [
   },
   {
     id: 'baseball-training',
+    category: 'professional',
     title: 'Deterministic Baseball Simulation',
     description: 'Led development of mobile training application using Unity DOTS, integrating computer vision pose and velocity estimation with deterministic physics for frame-perfect replay and analysis.',
     tech: ['Unity', 'DOTS', 'iOS', 'Cocoapods', 'Computer Vision'],
@@ -124,6 +130,7 @@ export const projects: Project[] = [
   },
   {
     id: 'crewed-uncrewed',
+    category: 'professional',
     title: 'Uncrewed Command & Control Interface',
     description: 'Designed networked tactical interface for uncrewed operations using Unreal Engine 5 on dual iPads. Implemented custom RPCs and Protobuf messaging with <10ms latency for mission-critical operations.',
     tech: ['Unreal Engine 5', 'iOS', 'Protobuf', 'Networking', 'Cesium'],
@@ -158,6 +165,7 @@ export const projects: Project[] = [
   },
   {
     id: 'nfl-vr',
+    category: 'professional',
     title: 'VR Football Demo Management',
     description: 'Built demo orchestration system for NFL Pro Era, enabling real-time control of 20+ scenarios. Created CloudXR streaming client for wireless Meta Quest demos at conventions.',
     tech: ['Unity', 'Meta Quest', 'CloudXR', 'OSC', 'JNI'],
@@ -194,6 +202,7 @@ export const projects: Project[] = [
   },
   {
     id: 'xr-cockpit',
+    category: 'professional',
     title: 'XR Pilot Vehicle Interface',
     description: 'Developed experimental mixed reality cockpit interface for aviation applications using Unreal Engine 4. Created 3D spatial UI with gesture controls through rapid design iteration.',
     tech: ['Unreal Engine 4', 'XR', 'Vive Pro', 'C++'],
@@ -225,6 +234,159 @@ export const projects: Project[] = [
       'Demonstrated feasibility of XR interfaces for high-workload operational environments',
       'Plugin architecture reused for 3 subsequent XR research projects',
       'Published findings contributed to internal design guidelines for spatial interfaces'
+    ],
+  },
+
+  // ---------------------------------------------------------------------------
+  // Personal and open-source work.
+  // Contribution claims are scoped to git-verified authorship. Forks name their
+  // upstream and state plainly which parts are not mine.
+  // ---------------------------------------------------------------------------
+
+  {
+    id: 'forgejo-mcp',
+    category: 'personal',
+    title: 'Forgejo MCP Server',
+    description: 'A Model Context Protocol server in Go exposing 45 tools over a git forge API, so LLM agents can work with repositories, issues, pull requests and code search directly.',
+    tech: ['Go', 'MCP', 'REST APIs', 'Docker'],
+    highlight: '45 tools',
+    year: 'Active 2026',
+    role: 'Sole author',
+    repoUrl: 'https://github.com/timFinn/forgejo-mcp',
+    detailedDescription: `A Model Context Protocol server written in Go that gives LLM agents structured access to a git forge: repositories, issues, pull requests, files, branches, releases and code search, across 45 tools.
+      It started life in TypeScript and I rewrote it in Go deliberately, trading a heavier runtime for a single static binary that is far easier to ship and run anywhere.`,
+  },
+  {
+    id: 'local-llm-playbook',
+    category: 'personal',
+    title: 'Local LLM Deployment Playbook',
+    description: 'Automation and a written operations guide for running language models on local hardware as an always-available, OpenAI-compatible endpoint.',
+    tech: ['Ansible', 'Ollama', 'Python', 'Prometheus', 'Grafana'],
+    highlight: 'On-prem inference',
+    year: 'Active 2026',
+    role: 'Sole author',
+    detailedDescription: `Automation and an operations guide for turning local hardware into a continuously available, OpenAI-compatible inference endpoint, provisioned reproducibly rather than by hand.
+      Most of the written guidance covers the decisions that are easy to get wrong when you self-host models: choosing how aggressively to quantize against the quality it costs, keeping several models resident without exhausting memory, and pinning versions so an upstream change does not quietly alter behavior.`,
+  },
+  {
+    id: 'turing-cluster',
+    category: 'personal',
+    title: 'ARM64 Kubernetes Cluster',
+    description: 'A small ARM64 Kubernetes cluster managed entirely as code, serving as the private substrate the rest of my self-hosted projects run on.',
+    tech: ['Kubernetes', 'K3s', 'GitOps', 'ARM64', 'Linux'],
+    highlight: 'Managed as code',
+    year: 'Active 2026',
+    role: 'Sole author',
+    detailedDescription: `A small ARM64 Kubernetes cluster built on single-board compute modules, where every change goes through version control rather than a terminal. Nothing is configured by hand, so the cluster can be rebuilt from the repository.
+      It is the substrate most of my other self-hosted work runs on, which makes it the project that taught me the most about operating systems I depend on rather than just building them.`,
+  },
+  {
+    id: 'pliny',
+    category: 'personal',
+    title: 'Pliny — News & Intelligence Aggregation',
+    description: 'A scheduled aggregation pipeline that pulls from multiple news and open-source intelligence feeds, normalizes what it finds, and hands it to downstream readers.',
+    tech: ['Python', 'Flask', 'Kubernetes', 'SQLite'],
+    highlight: 'Scheduled ingestion',
+    year: 'Active 2026',
+    role: 'Sole author',
+    detailedDescription: `A pipeline that collects from several news and open-source intelligence sources on a schedule, normalizes everything into a single consistent format, and makes it available to standard feed readers.
+      The interesting problems here are the ones shared by any ingestion system that has to behave itself against third-party APIs: respecting rate limits, not re-reporting the same item twice, and deciding what to keep and what to let go.`,
+  },
+  {
+    id: 'unreal-garden',
+    category: 'personal',
+    title: 'Unreal Engine Sensor Visualization',
+    description: 'An Unreal Engine 5 client in C++ that visualizes live environmental sensor data in real time, connecting a working data pipeline to a game engine.',
+    tech: ['Unreal Engine 5', 'C++', 'Real-time 3D'],
+    highlight: 'Real-time data viz',
+    year: 'Active 2026',
+    role: 'Sole author',
+    detailedDescription: `An Unreal Engine 5 client written in C++ that takes live environmental sensor readings and renders them in real time, drawing on both current values and history.
+      It is the project where the two halves of my work meet: the real-time 3D engine experience from my professional background pointed at a data pipeline I built myself.`,
+  },
+  {
+    id: 'weather-station',
+    category: 'personal',
+    title: 'Weather Station Telemetry',
+    description: 'An environmental sensor pipeline running on a single-board computer, collecting readings continuously and feeding both dashboards and my other projects.',
+    tech: ['Python', 'Raspberry Pi', 'MQTT', 'InfluxDB', 'Grafana'],
+    highlight: 'Months of uptime',
+    year: 'Active 2026',
+    role: 'Sole author',
+    repoUrl: 'https://github.com/timFinn/weather-station',
+    detailedDescription: `An environmental telemetry pipeline running on a single-board computer: sensors are read continuously, readings are stored as time series, and the results surface both on dashboards and inside my other projects.
+      It has run unattended for months, which is the part that actually matters. Anything can work for an afternoon; staying up without intervention is what forces you to take error recovery seriously.`,
+  },
+  {
+    id: 'sdr-pi',
+    category: 'personal',
+    title: 'Multi-Radio Orchestration',
+    description: 'Configuration-driven orchestration for running several software-defined radios at once on a single machine, including aircraft transponder reception.',
+    tech: ['Ansible', 'Python', 'SDR', 'Raspberry Pi'],
+    highlight: 'Config-driven',
+    year: 'Active 2026',
+    role: 'Sole author',
+    detailedDescription: `Orchestration for running several software-defined radios simultaneously on one machine, covering aircraft transponder reception among other bands, with each radio described in configuration rather than in code.
+      The recurring difficulty is that the hardware does not identify itself consistently, so the system has to handle a set of devices that are nominally interchangeable but rarely behave that way.`,
+  },
+  {
+    id: 'inspectarr',
+    category: 'personal',
+    title: 'Inspectarr — Media Scanning Gate',
+    description: 'A Go service that watches for incoming media files and checks them before anything is imported, built around a pluggable interface for swapping scanning engines.',
+    tech: ['Go', 'Docker', 'CI/CD'],
+    highlight: 'Threat model first',
+    year: 'Active 2026',
+    role: 'Sole author',
+    detailedDescription: `A Go service that watches directories for new media files and inspects them before they are allowed through, with scanning engines sitting behind a pluggable interface so they can be swapped or combined.
+      I wrote the threat model before the implementation, which is backwards from how these projects usually go and turned out to be the right order: it settled several design questions before they became rewrites.`,
+  },
+  {
+    id: 'claude-dev',
+    category: 'personal',
+    title: 'Sandboxed Agent Container',
+    description: 'A container for running coding agents under meaningful constraint, with separate profiles for interactive use, unattended runs, and a restricted sandbox.',
+    tech: ['Docker', 'Shell', 'Linux', 'CI/CD'],
+    highlight: 'Constrained by default',
+    year: 'Active 2026',
+    role: 'Sole author',
+    detailedDescription: `A container for running coding agents with real limits on what they can reach, offering three profiles: interactive, unattended, and a restricted sandbox for anything I have not vetted.
+      The motivation is straightforward. Agents are useful precisely because they act on their own, and that is the same reason they are worth boxing in before pointing them at something that matters.`,
+  },
+  {
+    id: 'spiderfoot-hardening',
+    category: 'personal',
+    title: 'SpiderFoot — Security Hardening (fork)',
+    description: 'A fork of an open-source OSINT framework. My contribution is a scoped seven-commit security-hardening track, including a guard against LLM agents leaking scan data. The upstream AI layer is not my work.',
+    tech: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
+    highlight: 'Scoped contribution',
+    year: 'Active 2026',
+    role: 'Security-hardening contributor',
+    detailedDescription: `A fork of SpiderFoot, an open-source OSINT automation framework. To be precise about what is mine: the AI layer, meaning the analysis agents, the model gateway, the vector search and the event architecture, is the upstream maintainer's work. My contribution is a seven-commit security-hardening track.
+      The piece I care most about is a guard against LLM data exfiltration. Once you feed scan results into a language model, the model's output becomes a route by which sensitive findings can leave the system, and it is a route people rarely think to close. The guard fails closed, so an error stops the flow rather than quietly letting it through.`,
+    outcomes: [
+      'Seven authored commits, scoped to security hardening',
+      'Fail-closed guard against LLM data exfiltration',
+      'Single sign-on and role-based access middleware',
+    ],
+  },
+  {
+    id: 'openalice-guards',
+    category: 'personal',
+    title: 'OpenAlice — Risk Guards (fork)',
+    description: 'Feature-branch contributor to an open-source AI trading agent platform: 28 authored commits covering risk controls, a correctness fix, and an expanded signal router. The core engine is upstream.',
+    tech: ['TypeScript', 'Node.js', 'WebSockets', 'Claude Agent SDK'],
+    highlight: 'Scoped contribution',
+    year: 'Active 2026',
+    role: 'Feature-branch contributor',
+    repoUrl: 'https://github.com/timFinn/OpenAlice',
+    detailedDescription: `OpenAlice is an open-source AI trading agent platform built as a TypeScript monorepo. The core engine, its registry, router and guard pipeline, is maintained upstream; my work rides on those interfaces across 28 authored commits, verified against the git log rather than estimated.
+      Most of it is risk controls, limiting what the agents are permitted to do. The fix I am happiest with corrected a case where those limits were also rejecting orders that would have reduced risk, which is exactly the situation the limits exist to allow.`,
+    outcomes: [
+      '28 authored commits, verified against the git log',
+      'Risk controls constraining agent trading behavior',
+      'Correctness fix for limits blocking risk-reducing orders',
+      'Signal router expanded to cover more inputs',
     ],
   },
 ]

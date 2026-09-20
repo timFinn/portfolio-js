@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { projects } from '@/lib/projects'
 import {
   Gamepad2,
   BrainCircuit,
@@ -83,8 +84,8 @@ export default function Home() {
           <div className="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl divide-y md:divide-y-0 md:divide-x divide-slate-800 grid grid-cols-1 md:grid-cols-3 overflow-hidden shadow-2xl shadow-slate-950/50">
             {[
               { number: '12+', label: 'Years Experience', sublabel: 'Building real-time 3D systems' },
-              { number: 'Over $5M', label: 'Funding Secured', sublabel: 'Through technical leadership' },
-              { number: '15+', label: 'Major Projects', sublabel: 'From concept to production' }
+              { number: '$5.5M', label: 'Funding Secured', sublabel: 'Through technical leadership' },
+              { number: `${projects.length}`, label: 'Projects', sublabel: 'Professional and self-directed' }
             ].map((stat, index) => (
               <div key={index} className="px-8 py-8 text-center md:text-left">
                 <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">{stat.number}</div>
