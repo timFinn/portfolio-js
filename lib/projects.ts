@@ -241,8 +241,49 @@ export const projects: Project[] = [
   // Personal and open-source work.
   // Contribution claims are scoped to git-verified authorship. Forks name their
   // upstream and state plainly which parts are not mine.
+  //
+  // Ordered by maturity: how production-proven each one is, judged on unattended
+  // runtime, whether other things depend on it, and whether it has been through a
+  // second iteration. Contributions to other people's projects come last.
   // ---------------------------------------------------------------------------
 
+  {
+    id: 'turing-cluster',
+    category: 'personal',
+    title: 'ARM64 Kubernetes Cluster',
+    description: 'A small ARM64 Kubernetes cluster managed entirely as code, serving as the private substrate the rest of my self-hosted projects run on.',
+    tech: ['Kubernetes', 'K3s', 'GitOps', 'ARM64', 'Linux'],
+    highlight: 'Managed as code',
+    year: 'Active 2026',
+    role: 'Sole author',
+    detailedDescription: `A small ARM64 Kubernetes cluster built on single-board compute modules, where every change goes through version control rather than a terminal. Nothing is configured by hand, so the cluster can be rebuilt from the repository.
+      It is the substrate most of my other self-hosted work runs on, which makes it the project that taught me the most about operating systems I depend on rather than just building them.`,
+  },
+  {
+    id: 'weather-station',
+    category: 'personal',
+    title: 'Weather Station Telemetry',
+    description: 'An environmental sensor pipeline running on a single-board computer, collecting readings continuously and feeding both dashboards and my other projects.',
+    tech: ['Python', 'Raspberry Pi', 'MQTT', 'InfluxDB', 'Grafana'],
+    highlight: 'Months of uptime',
+    year: 'Active 2026',
+    role: 'Sole author',
+    repoUrl: 'https://github.com/timFinn/weather-station',
+    detailedDescription: `An environmental telemetry pipeline running on a single-board computer: sensors are read continuously, readings are stored as time series, and the results surface both on dashboards and inside my other projects.
+      It has run unattended for months, which is the part that actually matters. Anything can work for an afternoon; staying up without intervention is what forces you to take error recovery seriously.`,
+  },
+  {
+    id: 'pliny',
+    category: 'personal',
+    title: 'Pliny — News & Intelligence Aggregation',
+    description: 'A scheduled aggregation pipeline that pulls from multiple news and open-source intelligence feeds, normalizes what it finds, and hands it to downstream readers.',
+    tech: ['Python', 'Flask', 'Kubernetes', 'SQLite'],
+    highlight: 'Scheduled ingestion',
+    year: 'Active 2026',
+    role: 'Sole author',
+    detailedDescription: `A pipeline that collects from several news and open-source intelligence sources on a schedule, normalizes everything into a single consistent format, and makes it available to standard feed readers.
+      The interesting problems here are the ones shared by any ingestion system that has to behave itself against third-party APIs: respecting rate limits, not re-reporting the same item twice, and deciding what to keep and what to let go.`,
+  },
   {
     id: 'forgejo-mcp',
     category: 'personal',
@@ -267,55 +308,6 @@ export const projects: Project[] = [
     role: 'Sole author',
     detailedDescription: `Automation and an operations guide for turning local hardware into a continuously available, OpenAI-compatible inference endpoint, provisioned reproducibly rather than by hand.
       Most of the written guidance covers the decisions that are easy to get wrong when you self-host models: choosing how aggressively to quantize against the quality it costs, keeping several models resident without exhausting memory, and pinning versions so an upstream change does not quietly alter behavior.`,
-  },
-  {
-    id: 'turing-cluster',
-    category: 'personal',
-    title: 'ARM64 Kubernetes Cluster',
-    description: 'A small ARM64 Kubernetes cluster managed entirely as code, serving as the private substrate the rest of my self-hosted projects run on.',
-    tech: ['Kubernetes', 'K3s', 'GitOps', 'ARM64', 'Linux'],
-    highlight: 'Managed as code',
-    year: 'Active 2026',
-    role: 'Sole author',
-    detailedDescription: `A small ARM64 Kubernetes cluster built on single-board compute modules, where every change goes through version control rather than a terminal. Nothing is configured by hand, so the cluster can be rebuilt from the repository.
-      It is the substrate most of my other self-hosted work runs on, which makes it the project that taught me the most about operating systems I depend on rather than just building them.`,
-  },
-  {
-    id: 'pliny',
-    category: 'personal',
-    title: 'Pliny — News & Intelligence Aggregation',
-    description: 'A scheduled aggregation pipeline that pulls from multiple news and open-source intelligence feeds, normalizes what it finds, and hands it to downstream readers.',
-    tech: ['Python', 'Flask', 'Kubernetes', 'SQLite'],
-    highlight: 'Scheduled ingestion',
-    year: 'Active 2026',
-    role: 'Sole author',
-    detailedDescription: `A pipeline that collects from several news and open-source intelligence sources on a schedule, normalizes everything into a single consistent format, and makes it available to standard feed readers.
-      The interesting problems here are the ones shared by any ingestion system that has to behave itself against third-party APIs: respecting rate limits, not re-reporting the same item twice, and deciding what to keep and what to let go.`,
-  },
-  {
-    id: 'unreal-garden',
-    category: 'personal',
-    title: 'Unreal Engine Sensor Visualization',
-    description: 'An Unreal Engine 5 client in C++ that visualizes live environmental sensor data in real time, connecting a working data pipeline to a game engine.',
-    tech: ['Unreal Engine 5', 'C++', 'Real-time 3D'],
-    highlight: 'Real-time data viz',
-    year: 'Active 2026',
-    role: 'Sole author',
-    detailedDescription: `An Unreal Engine 5 client written in C++ that takes live environmental sensor readings and renders them in real time, drawing on both current values and history.
-      It is the project where the two halves of my work meet: the real-time 3D engine experience from my professional background pointed at a data pipeline I built myself.`,
-  },
-  {
-    id: 'weather-station',
-    category: 'personal',
-    title: 'Weather Station Telemetry',
-    description: 'An environmental sensor pipeline running on a single-board computer, collecting readings continuously and feeding both dashboards and my other projects.',
-    tech: ['Python', 'Raspberry Pi', 'MQTT', 'InfluxDB', 'Grafana'],
-    highlight: 'Months of uptime',
-    year: 'Active 2026',
-    role: 'Sole author',
-    repoUrl: 'https://github.com/timFinn/weather-station',
-    detailedDescription: `An environmental telemetry pipeline running on a single-board computer: sensors are read continuously, readings are stored as time series, and the results surface both on dashboards and inside my other projects.
-      It has run unattended for months, which is the part that actually matters. Anything can work for an afternoon; staying up without intervention is what forces you to take error recovery seriously.`,
   },
   {
     id: 'sdr-pi',
@@ -354,21 +346,16 @@ export const projects: Project[] = [
       The motivation is straightforward. Agents are useful precisely because they act on their own, and that is the same reason they are worth boxing in before pointing them at something that matters.`,
   },
   {
-    id: 'spiderfoot-hardening',
+    id: 'unreal-garden',
     category: 'personal',
-    title: 'SpiderFoot — Security Hardening (fork)',
-    description: 'A fork of an open-source OSINT framework. My contribution is a scoped seven-commit security-hardening track, including a guard against LLM agents leaking scan data. The upstream AI layer is not my work.',
-    tech: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
-    highlight: 'Scoped contribution',
+    title: 'Unreal Engine Sensor Visualization',
+    description: 'An Unreal Engine 5 client in C++ that visualizes live environmental sensor data in real time, connecting a working data pipeline to a game engine.',
+    tech: ['Unreal Engine 5', 'C++', 'Real-time 3D'],
+    highlight: 'Real-time data viz',
     year: 'Active 2026',
-    role: 'Security-hardening contributor',
-    detailedDescription: `A fork of SpiderFoot, an open-source OSINT automation framework. To be precise about what is mine: the AI layer, meaning the analysis agents, the model gateway, the vector search and the event architecture, is the upstream maintainer's work. My contribution is a seven-commit security-hardening track.
-      The piece I care most about is a guard against LLM data exfiltration. Once you feed scan results into a language model, the model's output becomes a route by which sensitive findings can leave the system, and it is a route people rarely think to close. The guard fails closed, so an error stops the flow rather than quietly letting it through.`,
-    outcomes: [
-      'Seven authored commits, scoped to security hardening',
-      'Fail-closed guard against LLM data exfiltration',
-      'Single sign-on and role-based access middleware',
-    ],
+    role: 'Sole author',
+    detailedDescription: `An Unreal Engine 5 client written in C++ that takes live environmental sensor readings and renders them in real time, drawing on both current values and history.
+      It is the project where the two halves of my work meet: the real-time 3D engine experience from my professional background pointed at a data pipeline I built myself.`,
   },
   {
     id: 'openalice-guards',
@@ -387,6 +374,23 @@ export const projects: Project[] = [
       'Risk controls constraining agent trading behavior',
       'Correctness fix for limits blocking risk-reducing orders',
       'Signal router expanded to cover more inputs',
+    ],
+  },
+  {
+    id: 'spiderfoot-hardening',
+    category: 'personal',
+    title: 'SpiderFoot — Security Hardening (fork)',
+    description: 'A fork of an open-source OSINT framework. My contribution is a scoped seven-commit security-hardening track, including a guard against LLM agents leaking scan data. The upstream AI layer is not my work.',
+    tech: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
+    highlight: 'Scoped contribution',
+    year: 'Active 2026',
+    role: 'Security-hardening contributor',
+    detailedDescription: `A fork of SpiderFoot, an open-source OSINT automation framework. To be precise about what is mine: the AI layer, meaning the analysis agents, the model gateway, the vector search and the event architecture, is the upstream maintainer's work. My contribution is a seven-commit security-hardening track.
+      The piece I care most about is a guard against LLM data exfiltration. Once you feed scan results into a language model, the model's output becomes a route by which sensitive findings can leave the system, and it is a route people rarely think to close. The guard fails closed, so an error stops the flow rather than quietly letting it through.`,
+    outcomes: [
+      'Seven authored commits, scoped to security hardening',
+      'Fail-closed guard against LLM data exfiltration',
+      'Single sign-on and role-based access middleware',
     ],
   },
 ]
