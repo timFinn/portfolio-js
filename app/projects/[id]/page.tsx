@@ -116,6 +116,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
               src={project.image}
               alt={project.title}
               fill
+              sizes="(max-width: 1024px) 100vw, 1024px"
               className="object-cover"
             />
           </div>
@@ -220,6 +221,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
                     src={img}
                     alt={`${project.title} screenshot ${idx + 2}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                   />
                 </div>
