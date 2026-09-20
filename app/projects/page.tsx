@@ -1,4 +1,4 @@
-import ProjectCard from '@/components/ProjectCard'
+import ProjectTabs from '@/components/ProjectTabs'
 import { projects } from '@/lib/projects'
 
 const professional = projects.filter((p) => p.category === 'professional')
@@ -26,42 +26,7 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Professional Work */}
-      <section className="max-w-6xl mx-auto px-4 pt-16 pb-8">
-        <div className="mb-8">
-          <h2 className="text-3xl font-bold text-slate-100 mb-2">
-            Professional <span className="gradient-text">Work</span>
-          </h2>
-          <p className="text-slate-400 max-w-2xl">
-            Delivered for employers and clients across training, defense, and
-            commercial programs.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {professional.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </section>
-
-      {/* Personal & Open Source */}
-      <section className="max-w-6xl mx-auto px-4 pt-12 pb-16">
-        <div className="mb-8 pt-12 border-t border-slate-800/60">
-          <h2 className="text-3xl font-bold text-slate-100 mb-2">
-            Personal &amp; <span className="gradient-text">Open Source</span>
-          </h2>
-          <p className="text-slate-400 max-w-2xl">
-            Self-directed work, all of it running on self-hosted infrastructure.
-            Contributions to forked projects are scoped to what I actually
-            authored, and say so.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {personal.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </section>
+      <ProjectTabs professional={professional} personal={personal} />
 
       {/* Tech Stack Section */}
       <section className="max-w-6xl mx-auto px-4 py-16">
